@@ -79,20 +79,20 @@ const cars = new Array("Saab", "Volvo", "BMW");
 <br><hr>
 
 ## What are the scopes of a variable in Javascript?
-There are two scopes of a varible: <br>
-### 1. Global Scope: <br>
+Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript.
+#### 1. Global Scope: <br>
 * Global variables, having global scope are available everywhere in a JavaScript code.
 * In simple terms, a variable that can be accessed anywhere in the program is known as a variable with global scope. Globally scoped variables can be defined using any of the three keywords: let, const, and var.
 <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Variables_in_Javacript_3.png">
 <br>
 
-### 2. Local Scope: <br>
+#### 2. Local Scope: <br>
 * Local variables are accessible only within a function in which they are defined.If you try to access any variable defined inside a function from outside or another function, it throws an error.
 <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Variables_in_Javacript_4.png">
 * Since you cannot access a local variable from outside the function, you can have a variable of the same name in another function as well.
 <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Variables_in_Javacript_5.png"><br>
 
-### 3. Block Scope: <br>
+#### 3. Block Scope: <br>
 * Before introducing ES6 (ECMAScript 6) in 2015, JavaScript had only two types of scopes: Global Scope and Local Scope. 
 * With the introduction of let and const keywords, it added a new type of Scope in JavaScript. You cannot access the variables declared inside a particular block (represented by {}) from outside the block.
 <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Variables_in_Javacript_6.png"><br>
@@ -178,7 +178,7 @@ All three of the call, bind, and apply methods set the this argument to the func
 
 <br>
 
-### call
+#### call
 
 The call method binds the this value to the function and executes the function. It takes the this value and a list of arguments as parameters. Then, it returns the value returned by the function, which is called using the call method.
 
@@ -191,7 +191,7 @@ test.call({num: 100}, 10, 20);
 ```
 In the code above, we have called the test function using the call method. The call method will invoke the test function with the this value as the object passed to the call method.
 
-### apply
+#### apply
 
 The apply method binds the this value to the function and executes the function. It takes the this value and a single array object as parameters, and it returns the value returned by the function, which is called using the apply method.
 
@@ -206,7 +206,7 @@ test.apply({num: 100}, [1,2,3]);
 call() and apply() are identical in functionality, the only difference is that call() accepts a list of arguments; whereas, apply() accepts a single array of arguments.
 ```
 
-### bind
+#### bind
 
 The bind method binds the this value to the function and returns a new function. However, we still need to separately invoke the returned function.
 
@@ -249,7 +249,7 @@ numbers.forEach(function(number) {
 });
 ```
 ```javascript
-//output
+//same output
 1
 2
 3
