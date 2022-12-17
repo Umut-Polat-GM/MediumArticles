@@ -1,4 +1,4 @@
-# JavaScript Nuts Notes
+# JavaScript Nutshell
 ##  What is JavaScript?
 <br>
 JavaScript is the most popular web scripting language, used for both client-side and server-side development.Supporting objects-oriented programing abilities, the JavaScript code can be inserted into HTML pages that can be understood and executed by web browsers.
