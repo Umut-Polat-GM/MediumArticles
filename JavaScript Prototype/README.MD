@@ -1,7 +1,16 @@
 ## JavaScript object.prototype nedir?
-JavaScript prototype, JavaScript dilinde nesnelere özellikler ve yöntemler eklemenize olanak sağlayan bir özelliktir.Diğer bir deyişle JavaScript nesneleri özelliklerini ve metotlarını prototiplerinden alır.Bu önemli bir kavramdır, çünkü diğer nesnelerden kalıtım alan nesneler oluşturmanıza olanak sağlar.<br>
-Derin bir nefes al lütfen daha yeni başladık!!!<br>
-new Date() ile nesne oluşturduğumuzda bu nesne özellik ve metotlarını Date.protoype den alır.<br>
+Object.prototype, JavaScript dilinde tüm nesnelerin prototipi olarak kullanılan bir nesne özelliğidir. Bu nesnenin özellikleri ve yöntemleri, tüm nesneler tarafından miras alınabilir. Örneğin, tüm nesnelerin “toString” yöntemine erişebilme yeteneği Object.prototype üzerinden kazanılır.<br>
+
+Object.prototype nesnesinin kendisi de bir prototype nesnesine sahiptir ve bu prototype nesnesi Object.prototype.prototype olarak adlandırılır. Bu prototype nesnesi null değerine eşittir ve bu, prototype zincirinin sonunu gösterir.<br>
+
+Object.prototype nesnesinin bazı önemli özellikleri şunlardır:
+
+* constructor: Nesnenin oluşturulduğu fonksiyonu gösterir. Örneğin, bir “Person” nesnesi oluşturmak için kullanılan “Person” fonksiyonunu gösterir.
+* hasOwnProperty(): Nesnenin kendi özelliğine sahip olup olmadığını sorgular. Örneğin, bir “Person” nesnesinin “name” özelliğine sahip olup olmadığını sorgular.
+* isPrototypeOf(): Belirtilen nesnenin bir prototipi olduğunu sorgular. Örneğin, bir “Person” nesnesinin “Object.prototype” prototipi olduğunu sorgular.
+<br>
+Bunlar sadece bazı örneklerdir ve Object.prototype nesnesinin daha fazla özelliği ve yöntemi vardır.
+<br>
 Olayı biraz abartıp bir noktaya dikkat çekmek istiyorum.<br>
 JavaScript'teki her nesnenin bir prototipi vardır.Javascript nesne tabanlı bir dil olması bu noktaya dikkat çekmemin en önemli nedenidir. Çok fazla uzatmadan bu noktanın derinliğinin araştırılmasını okuyucuya bırakıyorum.<br>
 
